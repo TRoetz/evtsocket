@@ -43,7 +43,7 @@ namespace MakeCall
                       await socket.Linger();
 
                       await socket.ExecuteApplication(uuid, "answer");
-                      await socket.Play(uuid, "misc/8000/misc-freeswitch_is_state_of_the_art.wav");
+                      await socket.Play(uuid, "https://s3-ap-southeast-2.amazonaws.com/talkingtech-voip/Greeting.wav");
                       await socket.Hangup(uuid, HangupCause.NormalClearing);
                   });
 
